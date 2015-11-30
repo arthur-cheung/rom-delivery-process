@@ -95,6 +95,7 @@ var ReworkHistorySection = (function(){
         element = this.context.element;
         columns = [
             {"display": "Rework Step", "id": "reworkStep", "type": "text"},
+            {"display": "Rework Outcome", "id": "reworkOutcome", "type": "text"},
             {"display": "Rework Comments", "id": "comments", "type": "text"},
             {"display": "Date", "id": "timeStamp", "type": "date", "format": "dd/MM/yyyy h:mm tt"},
             {"display": "User", "id": "actionedByUser", "type": "text"}

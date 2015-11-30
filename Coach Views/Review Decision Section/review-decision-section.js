@@ -94,6 +94,7 @@ var ReviewDecisionSection = (function(){
         // There are no variables bound directly to the radio buttons or the text area. Instead, we have bespoke onchange handlers
         // These handlers looks for a matching entry in request.reworkHistory - matching by reviewStep. If it can't find it, it'll create a new one.
         var element = this.context.element;
+        var userName = this.context.bpm.system.user_fullName;
         require(['dijit/registry', 'dojo/query', 'dojo/NodeList-dom'], function (registry, query) {
 
             // Bind to the each select - when values change, we want to bind to request
@@ -102,6 +103,8 @@ var ReviewDecisionSection = (function(){
                 widget.onChange = function () {
                     if (this.checked == true) {
                         reworkHistoryEntry.set('reworkOutcome', this.value);
+                        reworkHistoryEntry.set('timeStamp', (new Date()));
+                        reworkHistoryEntry.set('actionedByUser', userName);
                     }
                     if (this.value === 'Approve' && this.checked == true) {
                         query('.rejectReason').addClass('hidden');
@@ -116,6 +119,8 @@ var ReviewDecisionSection = (function(){
         var rejectReasonTextArea = element.querySelector('.rejectReason textarea');
         rejectReasonTextArea.addEventListener('change', function onChange(event) {
             reworkHistoryEntry.set('comments', event.target.value);
+            reworkHistoryEntry.set('timeStamp', (new Date()));
+            reworkHistoryEntry.set('actionedByUser', userName);
         });
     }
     function hideRejectReasonUnlessReject(){
