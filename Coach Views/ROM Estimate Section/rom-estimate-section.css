@@ -72,3 +72,6 @@
 .ROM_Estimate_Section .wrapper.readOnly{
     background-color: whitesmoke;
 }
+.ROM_Estimate_Section .estimateWithContingency{
+    margin-top: 0.65em;
+}

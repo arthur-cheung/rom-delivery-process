@@ -1,6 +1,13 @@
-.ROM_Button_Container .buttonContainer > *{
+.ROM_Button_Container .buttonContainer > .ContentBox > *{
     display: inline-block;
+}
+.ROM_Button_Container{
+    margin-top: 4em;
 }
 .ROM_Button_Container .buttonContainer{
     text-align: right;
+}
+.buttonContainer > .ContentBox > div button{
+    filter: none;
+    cursor: pointer;
 }
