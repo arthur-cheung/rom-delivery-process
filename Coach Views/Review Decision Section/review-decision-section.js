@@ -108,6 +108,7 @@ var ReviewDecisionSection = (function(){
                     }
                     if (this.value === 'Approve' && this.checked == true) {
                         query('.rejectReason').addClass('hidden');
+                        reworkHistoryEntry.set('comments', '');
                     }
                     else if (this.value === 'Reject' && this.checked == true) {
                         query('.rejectReason').removeClass('hidden');
