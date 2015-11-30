@@ -1,0 +1,9 @@
+.Rework_History_Section .hidden, .Rework_History_Section.hidden{
+    display: none;
+}
+.Rework_History_Section .borderedSectionHeader{
+    font-size: 1.2em;
+}
+.Rework_History_Section{
+    margin-bottom: 2em;
+}

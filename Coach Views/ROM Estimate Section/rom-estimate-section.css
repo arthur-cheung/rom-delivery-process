@@ -1,0 +1,74 @@
+.ROM_Estimate_Section .ContentBox{
+    width: 100%;
+}
+.ROM_Estimate_Section .estimateValue, .ROM_Estimate_Section .contingency, .ROM_Estimate_Section .estimateWithContingency{
+    display: inline-block;
+    position: relative;
+    margin: 0 2em 0 1em;
+}
+.ROM_Estimate_Section .estimateValue:after, .ROM_Estimate_Section .contingency:after{
+    display: inline-block;
+    position: absolute;
+    right: -1.5em;
+    bottom: 0.5em;
+}
+.ROM_Estimate_Section .estimateValue:after{
+    content: "+";
+}
+.ROM_Estimate_Section .contingency:after{
+    content: "=";
+}
+.ROM_Estimate_Section .currency > div.wrapper::before, .ROM_Estimate_Section .currency > div.outputText::before{
+    content: "$";
+    position: absolute;
+    left: -0.75em;
+    bottom: 0.5em;
+}
+.ROM_Estimate_Section .percentage > div.wrapper:after{
+    content: "%";
+    position: absolute;
+    bottom: 0.5em;
+}
+.ROM_Estimate_Section div.wrapper input{
+    display: inline-block;
+}
+.ROM_Estimate_Section .estimateValue div.wrapper.inputText{
+    width: 6em;
+}
+.ROM_Estimate_Section .contingency div.wrapper.inputText{
+    width: 3em;
+}
+.ROM_Estimate_Section .estimateWithContingency div > span.value{
+    line-height: 2em;
+}
+.ROM_Estimate_Section .estimateWithContingency{
+    margin-left: 2em;
+}
+.ROM_Estimate_Section .Input_Text > span, .ROM_Estimate_Section .Output_Text > div > span.label{
+    display: block;
+    margin-bottom: 0.5em;
+    min-width:  7em;
+    font-size: 1em;
+    color: darkgrey;
+    border-bottom: 1px solid silver;
+}
+.ROM_Estimate_Section .estimateWithContingency span.label{
+    width: 12em;
+}
+.ROM_Estimate_Section .estimateWithContingency span.value:empty:before {
+    content: "\00a0";   /* This populates an empty span with space - so that the styling is consistent when we have no data */
+}
+
+.ROM_Estimate_Section > *{
+    margin-top: 1em;
+}
+.ROM_Estimate_Section .Text_Area .textArea{
+    width: 98%;
+}
+.ROM_Estimate_Section .wrapper.readOnly.focused{
+    border: silver 1px solid;
+    box-shadow: none;
+}
+.ROM_Estimate_Section .wrapper.readOnly{
+    background-color: whitesmoke;
+}

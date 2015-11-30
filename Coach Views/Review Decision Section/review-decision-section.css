@@ -1,0 +1,44 @@
+.Review_Decision_Section .hidden{
+    display: none;
+}
+.Review_Decision_Section .singleSelectRadio .radiosContainer label > span{
+    margin-left: 0.5em
+}
+.Review_Decision_Section .singleSelectRadio.wrapper > span.label{
+    margin-right: 4em;
+}
+.Review_Decision_Section .Single_Select_Radio{
+    margin-bottom: 2.5em;
+}
+
+/* Style for text area*/
+.Review_Decision_Section .Text_Area .textArea{
+    height: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+.Review_Decision_Section .Text_Area{
+    padding-bottom: 2em;
+    width: 99.5%;
+}
+.Review_Decision_Section .radiosContainer > div{
+    padding: 0 0.5em 0.5em 0.5em;
+}
+.Review_Decision_Section .rejectReason > *{
+    display: inline-block;
+    margin-right: 2em;
+}
+.Review_Decision_Section .rejectReason > .textArea{
+    width: 75%;
+}
+.Review_Decision_Section .rejectReason > span{
+    vertical-align: top;
+}
+.Review_Decision_Section .rejectReason{
+    height: 10em;
+}
+.Review_Decision_Section .singleSelectRadio .radiosContainer > div{
+    margin-bottom: 0.2em;
+}
+
+

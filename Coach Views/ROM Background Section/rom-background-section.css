@@ -1,0 +1,39 @@
+.ROM_Background_Section .hidden{
+    display: none;
+}
+.ROM_Background_Section .readOnly{
+    background-color: whitesmoke;
+}
+.ROM_Background_Section .ContentBox > div{
+    display: inline-block;
+}
+.ROM_Background_Section div.releaseScheduleContainer{
+    vertical-align: bottom;
+    margin-left: 2em;
+    line-height: 5em;
+}
+.ROM_Background_Section div.releaseScheduleContainer a{
+    text-decoration: underline;
+    color: darkblue;
+}
+.ROM_Background_Section .wrapper.readOnly.focused{
+    border: silver 1px solid;
+    box-shadow: none;
+}
+
+/* Style for text area*/
+.ROM_Background_Section .Text_Area.romRequestReason .textArea, .ROM_Background_Section .Text_Area.background .textArea{
+    height: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+.ROM_Background_Section .Text_Area.romRequestReason{
+    height: 8em;
+}
+.ROM_Background_Section .Text_Area.background{
+    height: 12em;
+}
+.ROM_Background_Section .Text_Area{
+    padding-bottom: 2em;
+    width: 99.5%;
+}

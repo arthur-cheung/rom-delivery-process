@@ -1,0 +1,24 @@
+.borderedSection{
+    border: 1px dashed lightgrey;
+    border-radius: 8px;
+    position: relative;
+    background-color: white;
+    padding: 1.5em;
+    margin: 1.2em 1em;
+}
+.borderedSectionHeader{
+    position: absolute;
+    background-color: inherit;
+    top: -0.65em;
+    left: 1em;
+    font-size: 1.6em;
+    color: grey;
+    font-weight: lighter;
+    padding: 0 0.3em;
+}
+.borderedSection .borderedSection .borderedSectionHeader{
+    font-size: 1.3em;
+}
+.borderedSection .borderedSection{
+    margin-top: 3em;
+}

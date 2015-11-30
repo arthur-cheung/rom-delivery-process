@@ -1,0 +1,28 @@
+.informationPane.hidden{
+    display: none;
+}
+.informationPane{
+    padding: 1em;
+    border-radius: 6px;
+    margin: 0 2.5em 1em 2.5em;
+    font-size: 1.1em;
+}
+.informationPane.info{
+    background-color: rgb(217, 237, 247);
+    color: navy;
+}
+.informationPane.success{
+    background-color: rgb(223, 240, 216);
+    color: green;
+}
+.informationPane.warning{
+    background-color: rgb(252, 248, 227);
+    color: saddlebrown;
+}
+.informationPane.danger{
+    background-color: rgb(242, 222, 222);
+    color: darkred;
+}
+.ROM_Information_Pane{
+    margin: 2em 0 3em 0;
+}
